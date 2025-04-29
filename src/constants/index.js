@@ -136,7 +136,7 @@ import {
     {
       name: "Student Interest System",
       description:
-        "Interactive platform designed to enhance student engagement by visually representing their interests through graphical displays. Users can input their interests, hobbies, and academic preferences, and the system generates personalized graphs and charts to showcase these interests. This helps students explore potential career paths and academic pursuits in a dynamic and engaging manner.",
+        "Interactive platform designed to enhance student engagement by visually representing their interests through graphical displays. Users can input their interests, hobbies, and academic preferences, and the system generates personalized graphs and charts to showcase these interests accordingly. This helps students explore potential career paths and academic pursuits in a dynamic and engaging manner.",
       tags: [
         {
           name: "react",
