@@ -1,38 +1,21 @@
 import {
-    mobile,
-    backend,
-    creator,
-    web,
     javascript,
     typescript,
-    html,
-    css,
     reactjs,
-    redux,
     tailwind,
     nodejs,
-    mongodb,
     git,
-    figma,
-    docker,
-    meta,
-    starbucks,
-    tesla,
-    shopify,
-    carrent,
-    jobit,
-    tripguide,
-    threejs,
-    fiverr,
     upwork,
     dotnet,
-    bootstrape,
     django,
     github2,
     famms,
     elaxi,
     interest,
-    elite,
+    angular,
+    azure,
+    sqlserver,
+    amaze
   } from "../assets";
   
   export const navLinks = [
@@ -50,34 +33,27 @@ import {
     },
   ];
   
-  const services = [
-    {
-      title: "Full Stack Developer",
-      icon: web,
-    },
-    {
-      title: "ReactJS Developer",
-      icon: mobile,
-    },
-    {
-      title: "Backend Developer",
-      icon: backend,
-    },
-    {
-      title: "Machine Learning Engineer",
-      icon: creator,
-    },
-  ];
-  
   const technologies = [
     {
-      name: "HTML 5",
-      icon: html,
+      name: "Asp Dotnet Core",
+      icon: dotnet,
     },
     {
-      name: "CSS 3",
-      icon: css,
+      name: "Angular JS",
+      icon: angular,
     },
+    {
+      name: "sql-server",
+      icon: sqlserver,
+    },
+    {
+      name: "Microsoft Azure",
+      icon: azure,
+    },
+    {
+      name: "Node JS",
+      icon: nodejs,
+    }, 
     {
       name: "JavaScript",
       icon: javascript,
@@ -91,29 +67,13 @@ import {
       icon: reactjs,
     },
     {
-      name: "BootStrape",
-      icon: bootstrape,
-    },
-    {
       name: "Tailwind CSS",
       icon: tailwind,
     },
 
     {
-      name: "Node JS",
-      icon: nodejs,
-    },
-    {
-      name: "Three JS",
-      icon: threejs,
-    },
-    {
       name: "Django",
       icon: django,
-    },
-    {
-      name: "Asp Dotnet Core",
-      icon: dotnet,
     },
     {
       name: "git",
@@ -122,21 +82,18 @@ import {
     {
       name: "github",
       icon: github2,
-    },  
+    }, 
   ];
   
   const experiences = [
     {
-      title: "Web Developer",
-      company_name: "Fiverr",
-      icon: fiverr,
+      title: "Software Engineer",
+      company_name: "Amze Health",
+      icon: amaze,
       iconBg: "#E6DEDD",
-      date: "Jan 2020 - Mar 2022",
+      date: "March 2024 - Present",
       points: [
-        "Developing and maintaining web applications using React.js and other related technologies.",
-        "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-        "Implementing responsive design and ensuring cross-browser compatibility.",
-        "Participating in code reviews and providing constructive feedback to other developers.",
+        "I am currently working at Amaze Health, a leading healthcare service provider in the USA. In my role, I specialize in developing and maintaining full stack applications using .NET technologies and developing and maintaining APIs with expertise in AngularJs for frontend and SQL for managing data. My work primarily involves building scalable, secure, and efficient solutions, fixing bugs and adding new features to enhance the performance of the applications.",
       ],
     },
     {
@@ -158,23 +115,20 @@ import {
     {
       testimonial:
         "I thought it was impossible to make a website as beautiful as our product, but he proved me wrong.",
-      name: "Sara Lee",
-      company: "Fiverr",
-      // image: "https://randomuser.me/api/portraits/women/4.jpg",
+      name: "Dave",
+      company: "Upwork",
     },
     {
       testimonial:
         "I've never met a web developer who truly cares about their clients' success like Qadeer does.",
-      name: "Alix",
-      company: "Fiverr",
-      // image: "https://randomuser.me/api/portraits/men/5.jpg",
+      name: "Nabeel",
+      company: "Amaze",
     },
     {
       testimonial:
         "After Rick optimized our website, our traffic increased by 50%. We can't thank them enough!",
-      name: "Lisa Wang",
+      name: "Taylo H.",
       company: "Upwork",
-      // image: "https://randomuser.me/api/portraits/women/6.jpg",
     },
   ];
   
@@ -242,27 +196,6 @@ import {
       image: elaxi,
       source_code_link: "https://github.com/muhammad-qadeerr/elaxi-a-ride-hailing-app.git",
     },
-    // {
-    //   name: "Student Interest System",
-    //   description:
-    //     "Interactive platform designed to enhance student engagement by visually representing their interests through graphical displays. Users can input their interests, hobbies, and academic preferences, and the system generates personalized graphs and charts to showcase these interests. This helps students explore potential career paths and academic pursuits in a dynamic and engaging manner.",
-    //   tags: [
-    //     {
-    //       name: "react",
-    //       color: "blue-text-gradient",
-    //     },
-    //     {
-    //       name: "django",
-    //       color: "green-text-gradient",
-    //     },
-    //     {
-    //       name: "typescript",
-    //       color: "pink-text-gradient",
-    //     },
-    //   ],
-    //   image: interest,
-    //   source_code_link: "https://github.com/muhammad-qadeerr/Student-Interest-System.git",
-    // },
   ];
   
-  export { services, technologies, experiences, testimonials, projects };
+  export {technologies, experiences, testimonials, projects };

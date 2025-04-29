@@ -2,7 +2,6 @@ import React from "react";
 import { motion } from "framer-motion";
 import { Tilt } from "react-tilt";
 import { styles } from "../styles";
-import { services } from "../constants";
 import { fadeIn, textVariant } from "../utils/motion";
 import { SectionWrapper } from "../hoc";
 
@@ -46,20 +45,8 @@ const About = () => {
         variants={fadeIn("", "", 0.1, 1)}
         className="mt-4 text-secondary text-[17px] max-w-3xl leading-[30px]"
       >
-        "I am a skilled software engineer proficient in a diverse range of
-        technologies including React.js, Node.js, Django, and ASP.NET Core. With
-        expertise in both frontend and backend development, I specialize in
-        building robust web applications tailored to meet client needs.
-        Additionally, my background in machine learning allows me to integrate
-        intelligent solutions into my projects, enhancing their functionality
-        and performance. Let's Work together to bring your idea to life!"
+        "Hi, I'm Qadeer, a Full Stack Software Engineer and experienced .NET Developer who builds web applications to solve real-world problems. Skilled in ReactJS, Next.js, Django, cloud integration, and AI automation, I create efficient, scalable solutions. Currently, I work with Amaze Health, developing and maintaining a full-stack Angular and .NET application for healthcare operations. I'm passionate about delivering reliable software that adds real value to users. Let's connect and explore how my expertise in C#, ASP.NET, Angular, ReactJS, and more can contribute to your team's success."
       </motion.p>
-
-      <div className="mt-20 flex flex-wrap gap-10">
-        {services.map((service, index) => (
-          <ServiceCard key={service.title} index={index} {...service} />
-        ))}
-      </div>
     </>
   );
 };
