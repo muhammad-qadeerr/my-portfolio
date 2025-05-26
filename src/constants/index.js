@@ -88,7 +88,7 @@ import {
   const experiences = [
     {
       title: "Software Engineer",
-      company_name: "Amze Health",
+      company_name: "Amaze Health",
       icon: amaze,
       iconBg: "#E6DEDD",
       date: "March 2024 - Present",
