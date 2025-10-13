@@ -134,6 +134,7 @@ import {
   
   const projects = [
     {
+      slug: "student-interest-system",
       name: "Student Interest System",
       description:
         "Interactive platform designed to enhance student engagement by visually representing their interests through graphical displays. Users can input their interests, hobbies, and academic preferences, and the system generates personalized graphs and charts to showcase these interests accordingly. This helps students explore potential career paths and academic pursuits in a dynamic and engaging manner.",
@@ -155,6 +156,7 @@ import {
       source_code_link: "https://github.com/muhammad-qadeerr/Student-Interest-System.git",
     },
     {
+      slug: "famms-glamour-e-store",
       name: "Famms | Glamour E-Store",
       description:
         "An ecommerce platform built with Asp .Net MVC that allows users to browse through a wide range of products, make purchases securely, and manage their orders and account information with ease. The platform features a user-friendly interface, robust search functionality, and seamless checkout process to enhance the overall shopping experience for customers.",
@@ -176,6 +178,7 @@ import {
       source_code_link: "https://github.com/muhammad-qadeerr/famms-glamour-estore.git",
     },
     {
+      slug: "elaxi-ride-hailing-app",
       name: "Elaxi | A Ride Hailing App",
       description:
         "Web application revolutionizes the way users access transportation services. Connecting passengers with nearby drivers with user-friendly interface for effortless ride requests. With real-time tracking and estimated fares, users can plan their journeys with confidence. With Rating system allows users to provide valuable feedback, ensuring continuous improvement and customer satisfaction.",

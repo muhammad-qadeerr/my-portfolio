@@ -5,12 +5,12 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        primary: "#050816",
-        secondary: "#aaa6c3",
-        tertiary: "#151030",
-        "black-100": "#100d25",
-        "black-200": "#090325",
-        "white-100": "#f3f3f3",
+        primary: "#0B1211", // deep emerald black
+        secondary: "#93B1A6", // muted green-gray text
+        tertiary: "#0B1F1A", // dark card bg
+        "black-100": "#0A1714",
+        "black-200": "#07100D",
+        "white-100": "#F0FDF4", // emerald-50
       },
       boxShadow: {
         card: "0px 35px 120px -15px #211e35",
@@ -19,7 +19,7 @@ module.exports = {
         xs: "450px",
       },
       backgroundImage: {
-        "hero-pattern": "url('/src/assets/herobg.png')",
+        "hero-pattern": "radial-gradient(1200px 600px at 20% 0%, rgba(16,185,129,0.25) 0%, rgba(11,18,17,0) 60%), radial-gradient(1000px 500px at 100% 20%, rgba(16,185,129,0.15) 0%, rgba(11,18,17,0) 60%)",
       },
     },
   },

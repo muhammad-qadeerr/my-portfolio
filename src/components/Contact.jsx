@@ -3,7 +3,6 @@ import { motion } from "framer-motion";
 import emailjs from "@emailjs/browser";
 
 import { styles } from "../styles";
-import { EarthCanvas } from "./canvas";
 import { SectionWrapper } from "../hoc";
 import { slideIn } from "../utils/motion";
 
@@ -145,9 +144,40 @@ const Contact = () => {
 
       <motion.div
         variants={slideIn("right", "tween", 0.2, 1)}
-        className="xl:flex-1 xl:h-auto md:h-[550px] h-[350px]"
+        className="xl:flex-1 xl:h-auto md:h-[550px] h-[350px] rounded-2xl bg-tertiary/60 ring-1 ring-white/10 p-8 flex flex-col justify-center"
       >
-        <EarthCanvas />
+        <h3 className="text-white text-2xl font-bold mb-3">Let’s collaborate</h3>
+        <p className="text-secondary mb-6 max-w-prose">
+          I’m available for freelance and full-time opportunities. If you have a
+          project or role that fits my skills, feel free to reach out.
+        </p>
+        <ul className="text-secondary space-y-2 list-disc list-inside mb-8">
+          <li>Full‑stack development (.NET, Angular, React)</li>
+          <li>API design, integrations, and databases</li>
+          <li>Performance optimization and UI improvements</li>
+        </ul>
+        <div className="flex flex-col gap-3 sm:flex-row sm:items-center sm:justify-between">
+          <div className="flex flex-col sm:flex-row sm:items-center gap-2 sm:gap-6 text-secondary">
+            <p>
+              Email:
+              <a href="mailto:muhammadqadeerr456@gmail.com" className="ml-2 text-white hover:underline">
+                muhammadqadeerr456@gmail.com
+              </a>
+            </p>
+            <p>
+              Phone:
+              <a href="tel:+923225481756" className="ml-2 text-white hover:underline">
+                +92‑322‑5481756
+              </a>
+            </p>
+          </div>
+          <a
+            href="#projects"
+            className="bg-black-100 text-white px-5 py-3 rounded-lg ring-1 ring-white/10 hover:opacity-90 w-full sm:w-auto"
+          >
+            View Projects
+          </a>
+        </div>
       </motion.div>
     </div>
   );
