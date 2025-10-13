@@ -36,16 +36,16 @@ const Navbar = () => {
       <div className="w-full flex justify-between items-center max-w-7xl mx-auto">
         <Link
           to="/"
-          className="flex items-center gap-2"
+          className="flex items-center gap-0 sm:gap-1"
           onClick={() => {
             setActive("");
             window.scrollTo(0, 0);
           }}
         >
-          <img src={logo} alt="logo" className="w-9 h-9 object-contain" />
-          <p className="text-white text-[18px] font-bold cursor-pointer flex ">
+          <img src={logo} alt="logo" className="w-24 h-24 sm:w-16 sm:h-16 object-contain shrink-0" />
+          <p className="text-white text-[18px] font-bold cursor-pointer flex items-center">
             Qadeer &nbsp;
-            <span className="sm:block hidden"> | Software Engineer</span>
+            <span className="sm:block hidden">  | Software Engineer</span>
           </p>
         </Link>
 
@@ -62,6 +62,15 @@ const Navbar = () => {
             </li>
           ))}
         </ul>
+
+        {/* Desktop: Download CV */}
+        <a
+          href="https://drive.google.com/uc?export=download&id=16npnS1mOmVu_9pxo5MvCY_xLLwiOvI5R"
+          download
+          className="hidden sm:inline-flex items-center px-4 py-2 rounded-lg bg-[#10B981] text-black font-semibold shadow-card hover:opacity-90 ml-4"
+        >
+          Download CV
+        </a>
 
         <div className="sm:hidden flex flex-1 justify-end items-center">
           <img
@@ -91,6 +100,16 @@ const Navbar = () => {
                   <a href={`#${nav.id}`}>{nav.title}</a>
                 </li>
               ))}
+              <li>
+                <a
+                  href="https://drive.google.com/uc?export=download&id=16npnS1mOmVu_9pxo5MvCY_xLLwiOvI5R"
+                  download
+                  className="block text-white bg-[#10B981] text-black font-semibold px-4 py-2 rounded-md"
+                  onClick={() => setToggle(false)}
+                >
+                  Download CV
+                </a>
+              </li>
             </ul>
           </div>
         </div>

@@ -130,6 +130,24 @@ import {
       name: "Taylo H.",
       company: "Upwork",
     },
+    {
+      testimonial:
+        "He delivered a complex feature set ahead of schedule and communicated clearly throughout.",
+      name: "Sarah P.",
+      company: "Product Manager",
+    },
+    {
+      testimonial:
+        "We migrated to a modern React + .NET stack with zero downtime. Highly recommend.",
+      name: "Ahmed R.",
+      company: "CTO, Fintech Startup",
+    },
+    {
+      testimonial:
+        "Clean code, reliable delivery, and a strong sense of UX—great partner for long‑term work.",
+      name: "Julia V.",
+      company: "Agency Owner",
+    },
   ];
   
   const projects = [

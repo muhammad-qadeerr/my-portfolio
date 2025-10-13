@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { useParams, Link } from "react-router-dom";
 import { projects } from "../constants";
 import { styles } from "../styles";
@@ -7,6 +7,10 @@ import Navbar from "../components/Navbar";
 const ProjectDetails = () => {
   const { slug } = useParams();
   const project = projects.find((p) => p.slug === slug);
+
+  useEffect(() => {
+    window.scrollTo({ top: 0, left: 0, behavior: "instant" });
+  }, []);
 
   if (!project) {
     return (
@@ -27,8 +31,8 @@ const ProjectDetails = () => {
         <Navbar />
       </div>
 
-      <main className={`max-w-7xl mx-auto ${styles.paddingX} py-10`}>
-        <Link to="/" className="text-secondary hover:text-white transition-colors">← Back</Link>
+      <main className={`max-w-7xl mx-auto ${styles.paddingX} pt-24 pb-10`}>
+        <Link to="/#projects" className="text-secondary hover:text-white transition-colors">← Back</Link>
 
         <header className="mt-6">
           <h1 className={`${styles.sectionHeadText}`}>{project.name}</h1>

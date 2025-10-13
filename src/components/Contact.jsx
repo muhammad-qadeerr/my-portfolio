@@ -72,11 +72,11 @@ const Contact = () => {
 
   return (
     <div
-      className={`xl:mt-12 flex xl:flex-row flex-col-reverse gap-10 overflow-hidden`}
+      className={`xl:mt-12 flex xl:flex-row flex-col-reverse gap-8 sm:gap-10 overflow-hidden`}
     >
       <motion.div
         variants={slideIn("left", "tween", 0.2, 1)}
-        className="flex-[0.75] bg-black-100 p-8 rounded-2xl"
+        className="w-full xl:w-1/2 bg-black-100 p-6 sm:p-8 rounded-2xl"
       >
         <p className={styles.sectionSubText}>Get in touch</p>
         <h3 className={styles.sectionHeadText}>Contact.</h3>
@@ -144,36 +144,53 @@ const Contact = () => {
 
       <motion.div
         variants={slideIn("right", "tween", 0.2, 1)}
-        className="xl:flex-1 xl:h-auto md:h-[550px] h-[350px] rounded-2xl bg-tertiary/60 ring-1 ring-white/10 p-8 flex flex-col justify-center"
+        className="w-full xl:w-1/2 rounded-2xl bg-tertiary/60 ring-1 ring-white/10 p-6 sm:p-8 flex flex-col justify-center min-h-[320px] md:min-h-[420px]"
       >
         <h3 className="text-white text-2xl font-bold mb-3">Let’s collaborate</h3>
-        <p className="text-secondary mb-6 max-w-prose">
+        <p className="text-secondary mb-4 sm:mb-6 max-w-prose">
           I’m available for freelance and full-time opportunities. If you have a
           project or role that fits my skills, feel free to reach out.
         </p>
-        <ul className="text-secondary space-y-2 list-disc list-inside mb-8">
+        <ul className="text-secondary space-y-1 md:space-y-2 list-disc list-inside mb-6 sm:mb-8">
           <li>Full‑stack development (.NET, Angular, React)</li>
           <li>API design, integrations, and databases</li>
           <li>Performance optimization and UI improvements</li>
         </ul>
-        <div className="flex flex-col gap-3 sm:flex-row sm:items-center sm:justify-between">
-          <div className="flex flex-col sm:flex-row sm:items-center gap-2 sm:gap-6 text-secondary">
-            <p>
-              Email:
-              <a href="mailto:muhammadqadeerr456@gmail.com" className="ml-2 text-white hover:underline">
-                muhammadqadeerr456@gmail.com
-              </a>
-            </p>
-            <p>
-              Phone:
-              <a href="tel:+923225481756" className="ml-2 text-white hover:underline">
-                +92‑322‑5481756
-              </a>
-            </p>
+        {/* quick facts grid */}
+        <div className="grid grid-cols-1 sm:grid-cols-2 auto-rows-fr gap-3 mb-6 sm:mb-8 text-secondary">
+          <div className="h-full rounded-lg bg-black-100/60 ring-1 ring-white/10 p-3 flex flex-col gap-1">
+            <p className="text-white font-semibold leading-snug">Availability</p>
+            <p className="text-sm leading-snug break-words hyphens-auto">Freelance & full‑time</p>
           </div>
+          <div className="h-full rounded-lg bg-black-100/60 ring-1 ring-white/10 p-3 flex flex-col gap-1">
+            <p className="text-white font-semibold leading-snug">Response time</p>
+            <p className="text-sm leading-snug break-words hyphens-auto">Within 24 hours</p>
+          </div>
+          <div className="h-full rounded-lg bg-black-100/60 ring-1 ring-white/10 p-3 flex flex-col gap-1">
+            <p className="text-white font-semibold leading-snug">Location</p>
+            <p className="text-sm leading-snug break-words hyphens-auto">PK (remote‑friendly)</p>
+          </div>
+          <div className="h-full rounded-lg bg-black-100/60 ring-1 ring-white/10 p-3 flex flex-col gap-1">
+            <p className="text-white font-semibold leading-snug">Tech focus</p>
+            <p className="text-sm leading-snug break-words hyphens-auto">• .NET • Angular • React • Django • Azure Integrations</p>
+          </div>
+        </div>
+        <div className="pt-4 mt-2 border-t border-white/10 flex flex-col gap-3">
+          <p className="text-secondary">
+            Email:
+            <a href="mailto:muhammadqadeerr456@gmail.com" className="ml-2 text-white hover:underline break-words">
+              muhammadqadeerr456@gmail.com
+            </a>
+          </p>
+          <p className="text-secondary">
+            Phone:
+            <a href="tel:+923225481756" className="ml-2 text-white hover:underline">
+              +92‑322‑5481756
+            </a>
+          </p>
           <a
             href="#projects"
-            className="bg-black-100 text-white px-5 py-3 rounded-lg ring-1 ring-white/10 hover:opacity-90 w-full sm:w-auto"
+            className="bg-[#10B981] text-black font-semibold px-5 py-3 rounded-lg shadow-card hover:opacity-90 w-full text-center"
           >
             View Projects
           </a>
