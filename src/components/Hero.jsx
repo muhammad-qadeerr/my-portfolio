@@ -46,7 +46,7 @@ const Hero = () => {
                 href="https://www.linkedin.com/in/muhammad-qadeerr/"
                 target="_blank"
                 rel="noreferrer"
-                className="px-6 py-3 rounded-xl border border-[#0A66C2] text-[#0A66C2] font-semibold hover:bg-[#0A66C2] hover:text-white"
+                className="px-6 py-3 rounded-xl border border-[#10B981] text-[#10B981] font-semibold hover:bg-[#10B981] hover:text-white"
               >
                 Let's Connect
               </a>
