@@ -20,26 +20,36 @@ const Hero = () => {
             Full‑stack engineer crafting performant web apps with .NET, Angular,
             and React. I focus on clean UX, scalability, and real business value.
           </p>
-          <div className="mt-8 flex flex-wrap items-center gap-4">
-            <a
-              href="#projects"
-              className="px-6 py-3 rounded-xl bg-[#10B981] text-black font-semibold shadow-card hover:opacity-90"
-            >
-              View Projects
-            </a>
+          <div className="mt-8 flex flex-col gap-4">
             <div className="flex flex-wrap items-center gap-x-6 gap-y-2 text-secondary">
               <span>
-                Email: 
+                Email:
                 <a href="mailto:muhammadqadeerr456@gmail.com" className="text-white hover:underline ml-1">
                   muhammadqadeerr456@gmail.com
                 </a>
               </span>
               <span>
-                Phone: 
+                Phone:
                 <a href="tel:+923225481756" className="text-white hover:underline ml-1">
                   +92‑322‑5481756
                 </a>
               </span>
+            </div>
+            <div className="flex flex-wrap items-center gap-4">
+              <a
+                href="#projects"
+                className="px-6 py-3 rounded-xl bg-[#10B981] text-white font-semibold shadow-card hover:opacity-90"
+              >
+                View Projects
+              </a>
+              <a
+                href="https://www.linkedin.com/in/muhammad-qadeerr/"
+                target="_blank"
+                rel="noreferrer"
+                className="px-6 py-3 rounded-xl border border-[#0A66C2] text-[#0A66C2] font-semibold hover:bg-[#0A66C2] hover:text-white"
+              >
+                Let's Connect
+              </a>
             </div>
           </div>
         </div>
