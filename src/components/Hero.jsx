@@ -17,7 +17,7 @@ const Hero = () => {
             Hi, I'm <span className="text-[#10B981]"> Qadeer</span>
           </h1>
           <p className={`${styles.heroSubText} mt-2 text-white-100`}>
-            Full‑stack engineer crafting performant web apps with .NET, Angular,
+            Full‑stack engineer crafting performant apps with .NET, Angular,
             and React. I focus on clean UX, scalability, and real business value.
           </p>
           <div className="mt-8 flex flex-col gap-4">
